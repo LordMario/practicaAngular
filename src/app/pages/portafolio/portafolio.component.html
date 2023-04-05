@@ -17,7 +17,7 @@
         <p>Espere por favor</p>
     </div>
     <div *ngIf="!productService.cargando" class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
-        <a *ngFor="let item of productService.productos" routerLink="/item"
+        <a *ngFor="let item of productService.productos" routerLink="/item/{{item.cod}}"
             class="animate__animated animate__fadeIn rk-item ae-masonry__item">
             <img src="assets/productos/{{item.url}}.jpg" alt="">
             <div class="item-meta">
